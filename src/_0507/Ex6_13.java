@@ -14,10 +14,9 @@ class Car2 {
     }
 
     Car2(String color, String gearType, int door){
-        Car2 car = new Car2();
-        car.color = color;
-        car.gearType = gearType;
-        car.door = door;
+        this.color = color;
+        this.gearType = gearType;
+        this.door = door;
     }
 
     void printCar() {
@@ -32,7 +31,7 @@ public class Ex6_13 {
         cars[1] = new Car2("blue");
         cars[2] = new Car2("Black", "Auto", 3);
 
-        for (int i = 0; i<cars.length; i++) {
+        for (int i = 0; i < cars.length; i++) {
             cars[i].printCar();
         }
     }
